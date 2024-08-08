@@ -1,37 +1,34 @@
-# Организация ввода-вывода (stdin-stdout)
+# Input/Output (stdin-stdout)
 
-Стандартные потоки ввода-вывода обычно обозначаются как stdin (стандартный ввод) и stdout (стандартный вывод).
-Эти потоки представляют собой абстракции, через которые программа взаимодействует с внешним миром,
-читая данные из консоли (или других источников) и записывая результаты выполнения в консоль (или другие места).
+Standard I/O streams are usually denoted as stdin (standard input) and stdout (standard output). 
+These streams are abstractions through which the program interacts with the outside world, reading data from the console (or other sources) and writing execution results to the console (or other places).
 
-## Стандартный ввод (stdin)
+## Stdin
 
-stdin представляет собой поток, через который программа получает ввод от пользователя или из другого источника.
-В Python данные из stdin можно читать с использованием функции `input()`.
-Она ожидает ввод от пользователя и возвращает введенные данные в виде строки.
+Stdin is the stream where the program receives input from the user or from another source. 
+In Python, data from stdin can be read using the `input()` function. 
+It waits for input from the user and returns it as a string.
 
-```python
-name = input("Введите ваше имя: ")
+```python 
+name = input("Enter your name: ") 
 ```
 
-## Стандартный вывод (stdout)
+## Stdout
 
-stdout представляет собой поток, через который программа отправляет результаты своей работы.
-В Python данные в stdout выводятся с использованием функции `print()`.
-Она принимает один или несколько аргументов и выводит их, добавляя после каждого аргумента разделитель `sep` (пробел по умолчанию),
-а в конце добавляет `end` (переход на новую строку по умолчанию).
+Stdout is the stream where the program sends the results of its work. In Python, the `print()` function outputs data.
+It takes one or more arguments and outputs them, adding a sep (default space) delimiter after each argument, and an end (default line break) at the end.
 
-```python
-print("Это сообщение будет выведено в стандартный вывод.")
+```python 
+print("This message will be output to the stdout.") 
 ```
 
 ```python
-# Пример программы, которая читает число из stdin, умножает его на 2 и выводит результат в stdout
-input_number = input("Введите число: ")
+# An example program that reads a number from stdin, multiplies it by 2 and outputs the result to stdout
+input_number = input("Enter a number: ")
 try:
     input_number = float(input_number)
     result = input_number * 2
-    print("Результат умножения на 2:", result)
+    print("Result of multiplication by 2:", result)
 except ValueError:
-    print("Ошибка: Введите корректное число.")
+    print("Error: Enter the valid number.")
 ```

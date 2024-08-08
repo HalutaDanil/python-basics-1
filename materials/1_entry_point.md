@@ -1,57 +1,49 @@
-# Точка входа в программу, структура программы
+# Program entry point, program structure
 
-"Точка входа в программу" обозначает место, с которого начинается выполнение программы.
-В большинстве случаев точкой входа является исполняемый скрипт,
-содержащий код, который будет выполнен при запуске программы.
-Такой скрипт обычно содержит функцию с именем `main()`, и эта функция считается точкой входа.
+"Program entry point" refers to the place where program execution begins. 
+In most cases, the entry point is an executable script containing the code that will be executed when the program is run. Such a script usually contains a function named `main()`, and this function is considered the entry point.
 
-Пример простого скрипта на Python:
+An example of a simple Python script:
 
 ```python
 def main():
-    print("Привет, мир!")
+    print("Hello, world!")
 
 
 if __name__ == "__main__":
     main()
 ```
 
-В этом примере функция `main()` представляет собой основную логику программы.
-Затем используется условие `if __name__ == "__main__":`, чтобы проверить,
-выполняется ли скрипт напрямую (а не импортируется как модуль в другой программе).
-Если скрипт выполняется напрямую, то вызывается функция `main()`.
-Такая структура позволяет вам легко использовать код из других программ, импортируя его как модуль, при этом избегая
-выполнения основной логики, если скрипт используется в качестве модуля.
+In this example, the `main()` function represents the basic logic of the program. 
+The condition if `if __name__ == "__main__":` is then used, to check if the script is executed directly (rather than imported as a module in another program).
+If the script is executed directly, the `main()` function is called . This structure allows you to easily use code from other programs by importing it as a module, while avoiding executing the underlying logic if the script is used as a module.
 
-Структура программы в Python также может включать в себя объявления переменных, определение функций, условные
-операторы (`if`, `else`, `elif`), циклы (`for`, `while`), и другие элементы, в зависимости от сложности программы.
-Например, структура программы может выглядеть так:
+Python program structure can also include variable declarations, function definitions, conditional statements  (`if`, `else`, `elif`), loops (`for`, `while`), and other elements, depending on the complexity of the program. For example, the structure of a program might look like this:
 
 ```python
 # Импорт модулей
-import module1
+# Module import
 from module2 import function2
 
-# Определение переменных
+# Variable definition
 variable1 = 42
-variable2 = "Пример"
+variable2 = "Example"
 
 
-# Определение функций
+# Function definition
 def my_function():
-    print("Это моя функция")
+    print("This is my finction")
 
 
-# Основная логика программы
+# Basic logic of the program
 if variable1 > 0:
     my_function()
 else:
-    print("Переменная меньше или равна нулю")
+    print("Variable less than or equal to zero")
 
-# Вызов функций из других модулей
+# Calling functions from other modules
 module1.function1()
 function2()
 ```
 
-Общая идея заключается в том, чтобы организовать код таким образом, чтобы он был читаемым, легко поддерживаемым и мог
-быть эффективно использован как в самом скрипте, так и в других программах через импорт как модуль.
+The general idea is to organize the code so that it is readable, easily maintainable, and can be used effectively both in the script itself and in other programs via import as a module.

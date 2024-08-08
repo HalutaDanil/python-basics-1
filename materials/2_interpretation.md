@@ -1,14 +1,5 @@
-# Компиляция/интерпретация программы
+# Program compilation/interpretation
 
-Python - интерпретируемый язык программирования, что означает, что код на Python не компилируется в машинный код перед
-выполнением, как это делается, например, в языках программирования C++ или Java.
-Вместо этого Python использует специальную программу, называемую интерпретатором, для чтения и выполнения кода напрямую.
-Когда вы запускаете программу на Python, интерпретатор читает ваш код построчно (или по блокам) и переводит его в
-машинные команды, которые компьютер может выполнить.
-Преимущества интерпретации включают более быструю разработку благодаря отсутствию необходимости компиляции перед каждым
-тестированием изменений в коде. Однако интерпретация также может иметь свои недостатки, такие как меньшая
-производительность в некоторых случаях из-за дополнительного времени, требуемого для интерпретации кода во время
-выполнения программы.
-Кроме того, интерпретация обеспечивает большую гибкость, позволяя выполнять код на разных платформах без необходимости
-перекомпиляции. Это делает Python удобным для написания переносимого программного обеспечения, которое может работать на
-разных операционных системах без изменений в исходном коде.
+Python is an interpreted programming language, which means that Python code is not compiled into machine code before execution, as is done, for example, in C++ or Java programming languages.
+Instead, Python uses a special program called an interpreter to read and execute code directly. When you run a Python program, the interpreter reads your code line by line (or block by block) and translates it into machine commands that the computer can execute. The benefits of interpretation include faster development by not having to compile before each testing of code changes. However, interpretation can also have its disadvantages, such as lower performance in some cases due to the extra time required to interpret code at runtime.
+In addition, interpretation provides more flexibility, allowing code to run on different platforms without the need to recompile. This makes Python convenient for writing portable software that can run on different operating systems without changes to the source code.

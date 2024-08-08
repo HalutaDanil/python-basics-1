@@ -1,122 +1,109 @@
-# Project 01 — Python_Bootcamp  
+# Project 01 - Python_Bootcamp  
 
-Резюме: в этом проекте ты познакомишься с основными функциями языка **Python**.
+Summary: In this project, you will learn about the main functions of the **Python** language .
 
-💡 [Нажми сюда](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624), **чтобы поделиться с нами обратной связью на этот проект**. Это анонимно и поможет нашей команде сделать обучение лучше. Рекомендуем заполнить опрос сразу после выполнения проекта.
-
-## Содержание
+## Contents
  1. [Chapter I](#chapter-i)   
-     - [Инструкция](#инструкция)   
+     - [Rules](#rules)   
  2. [Chapter II](#chapter-ii)  
-     - [Общая информация](#общая-информация)  
+     - [General information](#general-information)  
  3. [Chapter III](#chapter-iii)      
-     - [Задание 0. Создание проекта](#задание-0-создание-проекта)  
-     - [Задание 1. Скалярное произведение](#задание-1-скалярное-произведение)  
-     - [Задание 2. Палиндром](#задание-2-палиндром)  
-     - [Задание 3. Фигуры](#задание-3-фигуры)  
-     - [Задание 4. Треугольник Паскаля](#задание-4-треугольник-паскаля)  
-     - [Задание 5. Преобразование строки в число](#задание-5-преобразование-строки-в-число)  
-     - [Задание 6. Фильмы](#задание-6-фильмы)  
-     - [Задание 7. Робот](#задание-7-робот)
-     - [Задание 8. Различные числа](#задание-8-различные-числа) 
-     - [Задание 9. Производная в точке](#задание-9-производная-в-точке)  
-     - [Задание 10. Аппараты](#задание-10-аппараты)  
+     - [Task 0. Project creation](#task-0-project-creation)  
+     - [Task 1. Scalar product](#task-1-scalar-product)  
+     - [Task 2. Palindrome](#task-2-palindrome)  
+     - [Task 3. Figures](#task-3-figures)  
+     - [Task 4. Pascal's triangle](#task-4-pascal's-triangle)  
+     - [Task 5. String to number conversion](#task-5-string-to-number-conversion)  
+     - [Task 6. Movies](#task-6-movies)  
+     - [Task 7. A robot](#task-7-a-robot)
+     - [Task 8. Different numbers](#task-8-different-numbers) 
+     - [Task 9. The derivative at a point](#task-9-the-derivative-at-a point)  
+     - [Task 10. Machines](#task-10-machines)   
 
 
 
 ## Chapter I
-## Инструкция
+## Rules
 
-1. На протяжении всего курса тебя будет сопровождать чувство неопределенности и острого дефицита информации — это нормально. Не забывай, что информация в репозитории и Google всегда с тобой. Как и пиры, и Rocket.Chat. Общайся. Ищи. Опирайся на здравый смысл. Не бойся ошибиться.
-2. Будь внимателен к источникам информации. Проверяй. Думай. Анализируй. Сравнивай. 
-3. Внимательно читай задания. Перечитай несколько раз. 
-4. Читать примеры тоже лучше внимательно. В них может быть что-то, что не указано в явном виде в самом задании.
-5. Тебе могут встретиться несоответствия, когда что-то новое в условиях задачи или примере противоречит уже известному. Если встретилось такое, попробуй разобраться. Если не получилось, запиши вопрос в открытые вопросы и выясни в процессе работы. Не оставляй открытые вопросы неразрешенными. 
-6. Если задание кажется непонятным или невыполнимым — так только кажется. Попробуй его декомпозировать. Скорее всего, отдельные части станут понятными. 
-7. На пути тебе встретятся самые разные задания. Те, что помечены звездочкой (\*) — подходят для более дотошных. Они повышенной сложности и не обязательны к выполнению. Но если ты их сделаешь, то получишь дополнительный опыт и знания.
-8. Не пытайся обмануть систему и окружающих. В первую очередь ты обманешь себя.
-9. Есть вопрос? Спроси соседа справа. Если это не помогло — соседа слева.
-10. Когда пользуешься помощью — всегда разбирайся до конца: почему, как и зачем. Иначе помощь не будет иметь смысла.
-11. Всегда делай push только в ветку develop! Ветка master будет проигнорирована. Работай в директории src.
-12. В твоей директории не должно быть иных файлов, кроме тех, что обозначены в заданиях.
+1. All along the way you may feel a sense of uncertainty and a severe lack of information: that's okay. Don't forget that the information in the repository and Google is always with you. So are your peers and Rocket.Chat. Communicate. Search. Rely on common sense. Don't be afraid to make mistakes.
+2. Be careful about the sources of information. Check. Think. Analyze. Compare. 
+3. Read the tasks thoroughly. Reread it several times.  
+4. Read the examples carefully. There may be something in them that is not explicitly stated in the task itself.
+5. You may find inconsistencies, when something new in the terms of the task or examples conflicts with something you already know. If you come across such an inconsistency, try to figure it out. If you can’t, write the question in open questions and find out in the process of work. Do not leave open questions unresolved.  
+6. If a task seems confusing or impossible to complete — it only seems that way. Try to decompose it. Most likely, some parts will become clear.  
+7. There will be various tasks. Those marked with an c (\\\*) are for the more meticulous students. These tasks are more difficult and are not mandatory. But if you do them, you will gain additional experience and knowledge.
+8. Don't try to fool the system and those around you. You will be fooling yourself first.
+9. You got a question? Ask your neighbor on the right.  If that doesn't help, ask your neighbor on the left.
+10. If you use help, you should always understand why and how.  Otherwise, the help will not make sense.
+11. Always push only to the develop branch! The master branch will be ignored. Work in the src directory.
+12. There should be no files in your directory other than those specified in the tasks.
 
 ## Chapter II
-## Общая информация
+## General information
 
-**Python** — это высокоуровневый, интерпретируемый язык программирования, который обладает простым и читаемым синтаксисом.
+**Python** is a high-level, interpreted programming language that has a simple and readable syntax.
 
-В конце 1980-х годов сотрудником голландского национального института математики и информатики GWI Гвидо ван Россумом (Guido van Rossum) была предложена идея создания нового языка программирования.
+In the late 1980s, Guido van Rossum of the Dutch National Research Institute for Mathematics and Computer Science GWI proposed the idea of creating a new programming language.
 
-В то время Гвидо участвовал в разработке учебного языка ABC, как базы для изучения программирования. Проект ABC в итоге не увенчался успехом, и Гвидо перешел к программированию в другие проекты, где ключевой темой была операционная система Amoeba (объединяющая компьютеры в сети и дающая пользователям иллюзию взаимодействия с единой системой).
+At the time, Guido was involved in the development of the ABC language as a basis for studying programming. The ABC project eventually failed and Guido moved on to programming other projects involving the Amoeba operating system as a key theme (which connects computers in a network and gives users the illusion of interacting with a single system).
 
-В 1989 году системе Amoeba не хватало языка сценариев, поэтому Гвидо ван Россум планировал мини-проект: собирался написать язык программирования на основе наработок ABC. Первый прототип состоял из простой виртуальной машины, парсера и среды выполнения. Прототип Python понравился разработчикам CWI, и многие сразу включились в процесс: начали использовать язык для внутренних проектов и помогли доработать код.
+In 1989, the Amoeba system lacked a scripting language, so Guido van Rossum planned a mini project: he was going to write a programming language based on the ABC developments. The first prototype consisted of a simple virtual machine, a parser, and a runtime environment. CWI developers liked the Python prototype, and many of them got involved right away: they started using the language for internal projects and helped refine the code.
 
-В феврале 1991 года Гвидо опубликовал в группе новостей исходный текст Python версии 0.9.0. В этом начальном релизе были модули, заимствованные из Modula-3. Ван Россум описывал модуль, как «один из главных элементов в программировании на Python».
+In February 1991, Guido published the source code for Python version 0.9.0 in the newsgroup. This initial release had modules borrowed from Modula-3. Van Rossum described the module as "one of the main elements in Python programming".
 
-Python 1.0 появился в январе 1994 года. Последней версией, выпущенной Ван Россумом во время работы в центре математики и информатики (CWI), был Python 1.2.
+Python 1.0 was released in January 1994. The last version released by Van Rossum while working at the Center for Mathematics and Informatics (CWI) was Python 1.2.
 
-29 июня 1994 года на форуме вышла статья, которая затронула проблему зависимости Python-сообщества от решений Гвидо ван Россума — автор поделился мнением о том, что крупные компании опасаются использовать технологии, которые привязаны к одному человеку.
+On June 29, 1994, the forum published an article that addressed the Python community's dependence on Guido van Rossum's solutions - the author shared that large companies are afraid of using technologies that are tied to one person.
 
-Автором статьи был Майкл Маклей из Национального института стандартов и технологий США (NIST). Он пригласил Гвидо для совместной работы, и это привело к появлению в 1995 году Python Software Foundation — некоммерческой организации, которая должна была отвечать за защиту и развитие языка Python. У этой организации появилось несколько руководителей, а Гвидо ван Россум получил шуточный титул великодушного пожизненного диктатора (Benevolent Dictator For Life).
+The article was written by Michael McLay of the US National Institute of Standards and Technology (NIST). He recruited Guido to work with him, and this led to the creation of the Python Software Foundation in 1995 — a non-profit organization that was to be responsible for the protection and development of the Python language. This organization got several leaders, and Guido van Rossum was given the mock title of Benevolent Dictator For Life.
 
-С тех пор Python стал очень популярен среди разработчиков, которых привлекает его чистый синтаксис и репутация продуктивности. Так появилась вторая версия Python в 2000 году, и третья — в 2008 году. С конца 2020 года официальное Python-сообщество поддерживает только третью версию.
+Since then, Python has become very popular with developers who are attracted to its clean syntax and reputation for productivity. The second version of Python appeared in 2000, and the third version in 2008. Since late 2020, the official Python community has only supported the third version.
 
-**Главные преимущества Python**:
+**Python's main advantages**:
 
-1. Читаемость кода: Синтаксис Python спроектирован так, чтобы код был легким для чтения и понимания. Это способствует быстрой разработке программ и упрощает сопровождение кода.
-2. Интерпретируемость: Python является интерпретируемым языком. Это означает, что код выполняется построчно интерпретатором, а не компилируется в машинный код. Это облегчает разработку и тестирование.
-3. Многозадачность: Python поддерживает как синхронное, так и асинхронное программирование. Это позволяет эффективно решать разнообразные задачи, включая обработку большого количества данных, создание веб-приложений и решение научных задач.
-4. Большое сообщество: Python обладает активным сообществом разработчиков, что способствует созданию обширной библиотеки модулей и фреймворков. Это делает Python мощным инструментом для различных задач.
-5. Широкое применение: Python используется в различных областях, таких как веб-разработка (FastAPI, Django, Flask), анализ данных и машинное обучение (NumPy, Pandas, TensorFlow, PyTorch), автоматизация задач, научные исследования, создание игр и многое другое.
-6. Портативность: Python является кросс-платформенным языком, что позволяет запускать программы на различных операционных системах без изменений в исходном коде.
-7. Объектно-ориентированное программирование: Python поддерживает объектно-ориентированное программирование (ООП), что облегчает организацию кода и повышает его модульность.
+1. Сode readability: Python syntax is designed to make code easy to read and understand. It helps to develop programs quickly and simplifies code maintenance.
+2. Interpretability: Python is an interpreted language, which means that the code is executed line by line by an interpreter rather than compiled into machine code. This makes development and testing easier.
+3. Multitasking: Python supports both synchronous and asynchronous programming. This allows us to efficiently solve a variety of tasks, including processing large amounts of data, creating web applications, and solving scientific problems.
+4. A large community: Python has an active developer community, which contributes to an extensive library of modules and frameworks. This makes Python a powerful tool for a variety of tasks.
+5. Wide use: Python is used in various fields such as web development (FastAPI, Django, Flask), data analysis and machine learning (NumPy, Pandas, TensorFlow, PyTorch), task automation, scientific research, game creation, and more.
+6. Portability: Python is a cross-platform language, which allows programs to run on different operating systems without changes to the source code.
+7. Object-oriented programming: Python supports object-oriented programming (OOP), which makes code easier to organize and more modular.
 
-### Темы для изучения:
+### Topics to study:
 
-- Точка входа в программу, структура программы: В Python, точка входа в программу обычно начинается с функции `main()` или с выполнения кода в верхнем уровне файла.
-- Компиляция/интерпретация программы: Python — интерпретируемый язык, код выполняется построчно интерпретатором.
-- Управляющие структуры языка (следование, ветвление, повторение): В Python также присутствуют условные операторы (if-elif-else), циклы (for, while) для управления ходом выполнения программы.
-- Простые типы данных: В Python есть типы данных, такие как числа (целые, числа с плавающей точкой), строки, булевы значения.
-- Составные типы данных: Списки, кортежи, словари и множества — основные составные типы данных в Python.
-- Организация ввода-вывода (stdin-stdout): Python имеет возможности для работы с вводом и выводом данных через стандартные потоки (`input()` для ввода, `print()` для вывода).
-- Управление памятью, сборщик мусора: Python автоматически управляет памятью и имеет сборщик мусора, который отслеживает неиспользуемые объекты и освобождает память.
-- Сложные структуры данных: В Python присутствуют структуры данных высокого уровня, такие как списки списков, словари словарей, модули для создания шаблонов (например, модуль `typing` для поддержки типизации) и др.
-- Обработка исключений: Python предоставляет механизмы для обработки исключений с использованием ключевых слов `try`, `except`, `finally`, `else`. Это позволяет программистам обрабатывать и управлять ошибками в коде.
-- Работа с файлами: В Python есть богатые средства для работы с файлами. Ты можешь открывать, читать, записывать и закрывать файлы, используя встроенные функции и методы.
-- Функции: В Python можно создавать пользовательские функции с помощью ключевого слова `def`. Это позволяет лучше организовывать код, а также реализовывать рекурсивные алгоритмы.
-- Объектно-ориентированное программирование (ООП): Python поддерживает объектно-ориентированное программирование. Ты можешь создавать классы и объекты, определять методы и атрибуты, а также использовать наследование и полиморфизм.
+- Program entry point, program structure: In Python, the entry point into a program usually starts with the `main()` function or by executing code at the top level of the file.
+- Program compilation/interpretation: Python is an interpreted language, code is executed line by line by the interpreter.
+- Control structures (sequential, branching, repetition): Python also has conditional statements (if-elif-else), loops (for, while) to control program execution.
+- Simple data types: Python has data types such as numbers (integers, floating point numbers), strings, and boolean values.
+- Composite data types: Lists, tuples, dictionaries, and sets are the main composite data types in Python.
+- Input/Output (stdin-stdout): Python has features to handle data input and output via standard streams:  (`input()` and `print()`.
+- Memory management, garbage collector: Python automatically manages memory and has a garbage collector that keeps track of unused objects and frees memory.
+- Complex data structures: Python includes high-level data structures such as lists of lists, dictionaries of dictionaries, modules for creating templates (e.g., the` typing` module for supporting typing), and others.
+- Exception handling: Python provides mechanisms for handling exceptions using keywords `try`, `except`, `finally`, `else`. This allows programmers to handle and manage errors in the code.
+- Working with files: Python has rich tools for working with files. You can open, read, write and close files using built-in functions and methods.
+- Functions: You can create custom functions in Python using the `def` keyword. This allows for better code organization as well as the implementation of recursive algorithms.
+- Object-oriented programming: Python supports object-oriented programming: You can create classes and objects, define methods and attributes, and use inheritance and polymorphism.
 
 ## Chapter III
 
-**Внимание!** Каждую задачу оформляй в качестве отдельного проекта. Например, `T01/src/exercise0`, `T01/src/exercise1`, ... , `T01/src/exerciseN-1`, где *N* количество задач. Если предыдущее задание необходимо для следующего, просто скопируй предыдущий проект в директорию следующего и продолжай разработку в нем.
+**Pay attention!** Each task must be prepared as an individual project. For example, `T01/src/exercise0`, `T01/src/exercise1`, ... , `T01/src/exerciseN-1`, where *N* is a number of tasks. If you need the previous task for the next one, simply copy the previous project to the directory of the next one and continue development in it.
 
-## Задание 0. Создание проекта
+## Task 0. Creating a Project
 
-Для разработки на языке Python потребуется установить соответствующий интерпретатор.
-Его можно скачать с официального сайта. После ты сможешь использовать командную строку
-и/или различные интегрированные среды разработки (IDE) для работы над проектами.
+For development in the Python language, you will need to install the appropriate interpreter. You can download it from the official site. You will then be able to use the command line and/or various integrated development environments (IDEs) to work on your projects. 
+A project in this case is a set of files with the extension `.py` , which contain Python code. They are run with the python command `filename.py` (or `python3`) individually or imported into some common file, often called `main.py`. The process of creating a project in PyCharm is quite simple - you will need to select the Python interpreter, as well as the path for storing and the name of the project. It is also possible to create a virtual environment, which is usually convenient to use for large projects with many different dependencies (libraries, frameworks). The solutions to the following tasks need to be organized as separate files: `task1.py`, `task2.py`, ... I.e the solution of each task must be in an individual file. Run these files also separately.
 
-Проект в данном случае — набор файлов с расширением `.py`, которые содержат код на языке Python, запускаются командой `python filename.py` (или `python3`) по отдельности либо импортируются в какой-то общий файл, который часто называют `main.py`.
+## Task 1. Scalar product
 
-В PyCharm процесс создания проекта достаточно прост, потребуется выбрать интерпретатор Python,
-который будет использоваться, а также путь для сохранения и название проекта. Возможно также создание виртуального окружения, которое обычно удобно использовать для больших проектов
-с множеством различных зависимостей (библиотек, фреймворков).
+Calculate the scalar product of two vectors in three dimensional space. Use standard input stream and standard output stream for data input and output, respectively. Do not check the correctness of the input data.
 
-Решения последующих задач оформляй в виде отдельных файлов `task1.py`, `task2.py`, ... Т. е. решение каждой задачи должно быть в отдельном файле. Запускать эти файлы также следует по отдельности.
-
-## Задание 1. Скалярное произведение
-
-Вычисли скалярное произведение двух векторов в трехмерном пространстве.
-
-Для ввода и вывода данных используй стандартный поток ввода и стандартный поток вывода соответственно. Корректность входных данных не проверяй.
-
-- Входные данные: Вещественные числа, координаты двух векторов на двух строках соответственно.
-- Выходные данные: Вещественное число, скалярное произведение данных векторов.
+- Input: Real numbers, coordinates of two vectors on two lines respectively.
+- Output: Real number, scalar product of given vectors.
 
 <table>
     <tr>
-        <th>Входные данные</th>
-        <th>Выходные данные</th>
+        <th>Input</th>
+        <th>Output</th>
     </tr>
     <tr>
         <td>1.0 2.0 3.0<br>4.0 5.0 6.0</td>
@@ -124,19 +111,17 @@ Python 1.0 появился в январе 1994 года. Последней в
     </tr>
 </table>
 
-## Задание 2. Палиндром
+## Task 2. Palindrome
 
-Определи, является ли число палиндромом или нет.
+Determine whether the number is a palindrome or not. Use standard input stream and standard output stream for data input and output, respectively. Do not use strings. Negative numbers are not considered palindromes. Do not check the correctness of the input data.
 
-Для ввода и вывода данных используй стандартный поток ввода и стандартный поток вывода соответственно. Строки не используй. Отрицательные числа не считай палиндромами. Корректность входных данных не проверяй.
-
-- Входные данные: Целое число.
-- Выходные данные: True, если данное число является палиндромом. False, если данное число не является палиндромом.
+- Input: Integer.
+- Output: True if this number is a palindrome. False if this number is not a palindrome.
 
 <table>
     <tr>
-        <th>Входные данные</th>
-        <th>Выходные данные</th>
+        <th>Input</th>
+        <th>Output</th>
     </tr>
     <tr>
         <td>114341</td>
@@ -144,20 +129,17 @@ Python 1.0 появился в январе 1994 года. Последней в
     </tr>
 </table>
 
-## Задание 3. Фигуры
+## Task 3. Figures
 
-Обработай квадратную матрицу нулей и единиц, посчитай количество «квадратов» и «кругов» в ней.
-Никаких других фигур в матрице нет. Фигуры не могут выходить за границы матрицы. Между любыми двумя фигурами есть свободное место. Обозначенные фигуры содержат более одной единицы.
+Process a square matrix of zeros and ones, count the number of "squares" and "circles" in it. There are no other figures in the matrix. The figures cannot be beyond the boundaries of the matrix. There is an empty space between any two figures. Identified figures contain more than one unit. Use the input.txt file to enter data. Use the standard output stream to output data. Do not check the correctness of the input data.
 
-Для ввода данных используй текстовый файл input.txt. Для вывода данных используй стандартный поток вывода. Корректность входных данных не проверяй.
-
-- Входные данные: Строки квадратной матрицы, каждая из которых содержит нули/единицы через пробел.
-- Выходные данные: Два натуральных числа через пробел — количество «квадратов» и количество «кругов» в матрице соответственно.
+- Input: The rows of a square matrix, each containing zeros/units separated by a space.
+- Output: Two natural numbers separated by a space are the number of "squares" and the number of "circles" in the matrix, respectively.
 
 <table>
     <tr>
-        <th>Входные данные</th>
-        <th>Выходные данные</th>
+        <th>Input</th>
+        <th>Output</th>
     </tr>
     <tr>
         <td>0 0 0 0 0 0 0 0 1 0<br>0 1 1 1 0 0 0 1 1 1<br>0 1 1 1 0 0 0 0 1 0<br>
@@ -167,19 +149,17 @@ Python 1.0 появился в январе 1994 года. Последней в
     </tr>
 </table>
 
-## Задание 4. Треугольник Паскаля
+## Task 4. Pascal's triangle
 
-По заданному количеству N строк выведи N первых строк треугольника Паскаля.
+Output N first rows of Pascal's triangle by the given number N of rows. Use standard input stream and standard output stream for data input and output, respectively. Check the correctness of the input data.
 
-Для ввода и вывода данных используй стандартный поток ввода и стандартный поток вывода соответственно. Корректность входных данных следует проверять.
-
-- Входные данные: Вещественные числа, координаты двух векторов на двух строках соответственно.
-- Выходные данные: Вещественное число, скалярное произведение данных векторов.
+- Input: Real numbers, coordinates of two vectors on two lines respectively.
+- Output: Real number, scalar product of given vectors.
 
 <table>
     <tr>
-        <th>Входные данные</th>
-        <th>Выходные данные</th>
+        <th>Input</th>
+        <th>Output</th>
     </tr>
     <tr>
         <td>5</td>
@@ -187,21 +167,17 @@ Python 1.0 появился в январе 1994 года. Последней в
     </tr>
 </table>
 
-## Задание 5. Преобразование строки в число
+## Task 5. String to number conversion
 
-Преобразуй строку в вещественное число, как если бы она была обработана функцией `float()`.
-В реализации не используй ее, равно как и любые аналогичные функции. 
+Convert a string to a real number as if it were processed by the `float()` function . It, as well as any similar functions, should not be used in the implementation. Multiply the resulting real number by 2. Print the result with three digits after the dot. Use standard input stream and standard output stream for data input and output, respectively. Check the correctness of the input data.
 
-Умножь полученное вещественное число на 2. Результат выведи с тремя знаками после точки.
-Для ввода и вывода данных используй стандартный поток ввода и стандартный поток вывода соответственно. Корректность входных данных следует проверять.
-
-- Входные данные: Строка.
-- Выходные данные: Вещественное число, если ввод корректен. Сообщение об ошибке, если ввод некорректен.
+- Input: A string
+- Output: A real number if the input is correct. An error message if the input is incorrect.
 
 <table>
     <tr>
-        <th>Входные данные</th>
-        <th>Выходные данные</th>
+        <th>Input</th>
+        <th>Output</th>
     </tr>
     <tr>
         <td>-14.97</td>
@@ -209,17 +185,14 @@ Python 1.0 появился в январе 1994 года. Последней в
     </tr>
 </table>
 
-### Задание 6. Фильмы
+### Task 6. Movies
 
-Объедини два отсортированных по полю `year` списка фильмов так, чтобы полученный список остался отсортированным.
+Join two lists of movies sorted by the `year` field so that the resulting list remains sorted. The input data is in json format. Output the joined list also in json format. Use the input.txt text file to enter data. Use the standard output stream to output data. Check the correctness of the input data.
 
-Входные данные представлены в формате json. Объединенный список выведи также в формате json.
-Для ввода данных используй текстовый файл input.txt. Для вывода данных используй стандартный поток вывода. Корректность входных данных следует проверять.
+- Input: Two sorted lists of movies in json format.
+- Output: The joined sorted list in json format if the input is correct. An error message if the input is incorrect.
 
-- Входные данные: Два отсортированных списка фильмов в формате json.
-- Выходные данные: Объединенный отсортированный список в формате json, если ввод корректен. Сообщение об ошибке, если ввод некорректен.
-
-### Входные данные
+### Input
 
 ```json
 {
@@ -253,8 +226,7 @@ Python 1.0 появился в январе 1994 года. Последней в
   ]
 }
 ```
-
-### Выходные данные
+### Output
 
 ```json
 {
@@ -287,19 +259,17 @@ Python 1.0 появился в январе 1994 года. Последней в
 }
 ```
 
-## Задание 7. Робот
+## Task 7. A robot
 
-Робот умеет перемещаться вниз или вправо на одну клетку поля. Поле прямоугольное и заполнено числами — количеством монет в каждой клетке поля. Робот собирает монеты с каждой клетки, по которой прошел. Изначально он расположен в левой верхней клетке, поэтому в любом случае собирает монеты, расположенные в ней. Задача робота — собрать как можно больше монет по пути к правой нижней клетке поля, поэтому он всегда двигается по наиболее удачному маршруту.
+The robot is able to move down or to the right one square of the field. The field is rectangular and filled with numbers - the number of coins in each square of the field. The robot collects coins from each square it walked on. It is initially located in the top left square, so it collects the coins located there anyway. The robot's task is to collect as many coins as possible on the way to the bottom right square of the field, so it always moves along the most successful route. Determine from the given field how many coins the robot will collect. Use standard input stream and standard output stream for data input and output, respectively. Do not check the correctness of the input data.
 
-Определи по данному полю, сколько монет соберет робот. Для ввода и вывода данных используй стандартный поток ввода и стандартный поток вывода соответственно. Корректность входных данных не проверяй.
-
-- Входные данные: Два натуральных числа, количество строк N и количество столбцов M поля соответственно. N строк, каждая содержит M неотрицательных чисел, количество монет в каждой клетке поля.
-- Выходные данные: Неотрицательное число, суммарное количество монет, которое соберет робот.
+- Input: Two natural numbers, the number of rows N and the number of columns M of a field, respectively. N rows, each containing M non-negative numbers, the number of coins in each square of the field.
+- Output: A non-negative number, the total number of coins the robot will collect.
 
 <table>
     <tr>
-        <th>Входные данные</th>
-        <th>Выходные данные</th>
+        <th>Input</th>
+        <th>Output</th>
     </tr>
     <tr>
         <td>3 4<br>3 0 2 1<br>6 4 8 5<br>3 3 6 0</td>
@@ -307,19 +277,17 @@ Python 1.0 появился в январе 1994 года. Последней в
     </tr>
 </table>
 
-## Задание 8. Различные числа
+## Task 8. Different numbers
 
-Посчитай количество различных введенных чисел.
-Для ввода и вывода данных использовать стандартный поток ввода и стандартный поток вывода соответственно.
-Корректность входных данных не проверять.
+Count the number of different numbers entered. Use standard input stream and standard output stream for data input and output, respectively. Do not check the correctness of the input data.
 
-- Входные данные: Натуральное число, количество чисел N. N строк, каждая содержит целое число.
-- Выходные данные: Натуральное число, количество различных введенных чисел.
+- Input: Natural number, the number of numbers is N. N lines, each containing an integer.
+- Output: A natural number, the number of different numbers entered.
 
 <table>
     <tr>
-        <th>Входные данные</th>
-        <th>Выходные данные</th>
+        <th>Input</th>
+        <th>Output</th>
     </tr>
     <tr>
         <td>10<br>5<br>3<br>7<br>3<br>6<br>3<br>5<br>2<br>9<br>4</td>
@@ -327,24 +295,21 @@ Python 1.0 появился в январе 1994 года. Последней в
     </tr>
 </table>
 
-## Задание 9. Производная в точке
+## Task 9. The derivative at a point
 
-Посчитай производную заданного многочлена в данной точке.
-Результат выведи с тремя знаками после точки.
-Для ввода и вывода данных используй стандартный поток ввода и стандартный поток вывода соответственно.
-Корректность входных данных не проверяй.
+Calculate the derivative of a given polynomial at a given point. Print the result with three digits after the dot. Use standard input stream and standard output stream for data input and output, respectively. Do not check the correctness of the input data.
 
-- Входные данные: Натуральное и вещественное числа, старшая степень многочлена N и точка, в которой нужно найти производную, соответственно. N строк, i-ая содержит вещественное число, коэффициент при x в степени i (индексация с единицы).
-- Выходные данные: Вещественное число, производная многочлена в точке.
+- Input: The natural and real numbers, the highest degree of the polynomial N and the point at which you want to find the derivative, respectively. N lines, the i-th line contains a real number, the coefficient at x in degree i (indexing from one).
+- Output: The real number, the derivative of a polynomial at a point.
 
-Многочлен: `5 * x**2 + 1.2 * x - 3` \
-Производная: `10 * x + 1.2` \
-Производная в точке `3.0`: `30 + 1.2 = 31.2`
+Polynomial: `5 * x**2 + 1.2 * x - 3` \
+Derivative: `10 * x + 1.2` \
+Derivative at a point`3.0`: `30 + 1.2 = 31.2`
 
 <table>
     <tr>
-        <th>Входные данные</th>
-        <th>Выходные данные</th>
+        <th>Input</th>
+        <th>Output</th>
     </tr>
     <tr>
         <td>2 3.0<br>5<br>1.2<br>-3</td>
@@ -352,24 +317,22 @@ Python 1.0 появился в январе 1994 года. Последней в
     </tr>
 </table>
 
-## Задание 10. Аппараты
+## Task 10. Machines
 
-Аппарат имеет определенные год выпуска, стоимость и время работы. Необходимо выбрать два таких аппарата, которые будут работать по очереди и потратят определенное время. При этом стоимость аппаратов должна быть минимальной, а год выпуска одинаковый. Выведи общую стоимость выбранных аппаратов.
+The machine has certain year of manufacture, cost and running time. You need to select two such machines that will take turns and spend a certain amount of time. At the same time, the cost of the machines should be minimal and the year of manufacture should be the same. Output the total cost of the selected machines. It is guaranteed that there is a single solution. Use standard input stream and standard output stream for data input and output, respectively. Check the correctness of the input data.
 
-Гарантируется, что существует единственное решение.
-Для ввода и вывода данных используй стандартный поток ввода и стандартный поток вывода соответственно.
-Корректность входных данных следует проверять.
-
-- Входные данные: Два натуральных числа через пробел, количество доступных аппаратов N и требуемое общее время работы соответственно. N строк, каждая содержит три натуральных числа через пробел, год выпуска, стоимость и время работы аппарата соответственно.
-- Выходные данные: Натуральное число, если ввод корректен. Сообщение об ошибке, если ввод некорректен.
+- Input: Two natural numbers separated by a space, the number of available machines N and the required total running time, respectively. N lines, each containing three natural numbers separated by a space, the year of manufacture, the cost and the running time of the machine, respectively.
+- Output: A real number if the input is correct. An error message if the input is incorrect.
 
 <table>
     <tr>
-        <th>Входные данные</th>
-        <th>Выходные данные</th>
+        <th>Input</th>
+        <th>Output</th>
     </tr>
     <tr>
         <td>5 48<br>2023 100 14<br>2020 18 347<br>2023 10000000 34<br>2023 1000 34<br>2022 10 34</td>
         <td>1100</td>
     </tr>
 </table>
+
+💡 [Click here](https://new.oprosso.net/p/4cb31ec3f47a4596bc758ea1861fb624) **to give us feedback on this project**. It's anonymous and will help our team make your learning process better.

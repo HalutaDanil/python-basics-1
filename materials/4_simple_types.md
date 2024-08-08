@@ -1,167 +1,164 @@
-# Простые типы данных
+# Simple data types
 
-В языке Python есть несколько простых типов данных: числа, строки и булевы значения.
+The Python language has a few simple data types: numbers, strings, and Boolean values.
 
-## Числа
+## Numbers
 
-В Python можно работать с целыми числами (`int`) и числами с плавающей точкой (`float`).
-Числа используются для выполнения математических операций и хранения количественной информации.
-
-```python
-a = 15  # целое число
-b = 4.2  # число с плавающей точкой
-```
-
-## Строки
-
-Строки (`str`) представляют собой последовательность символов, заключенных в кавычки.
-Они используются для хранения текстовой информации и могут быть изменяемыми или неизменяемыми.
+In Python, you can work with integers (`int`) and floating point numbers (`float`). 
+Numbers are used to perform mathematical operations and store quantitative information.
 
 ```python
-# Одинарные кавычки
-my_string = 'Привет, мир!'
-
-# Двойные кавычки
-another_string = "Это другая строка."
-
-# Тройные кавычки (для многострочных строк)
-multiline_string = '''Это
-многострочная
-строка.'''
+a = 15  # integer
+b = 4.2  # floating point number
 ```
 
-Строки можно конкатенировать - `my_string + another_string`, а можно получать доступ к символам строки
-по индексам - `my_string[0]` (можно использовать и срезы - `my_string[1:4]`).
+## Strings
 
-**Форматирование строк**
+Strings (`str`) are a sequence of numbers characters enclosed in quotes. They are used to store textual information and can be changeable or non-changeable.
 
-Форматирование строк позволяет вставлять значения переменных в определенные места в строке или создавать строки
-с определенным форматом, делая код более читаемым и гибким.
+```python
+# Single quotes
+my_string = 'Hello, world!'
 
-- Метод format()
+# Double quotes
+another_string = "It's a different string."
+
+# Triple quotes (for multiline strings)
+multiline_string = ''It's
+a multiline
+string.'''
+```
+
+Strings can be concatenated - `my_string + another_string`, and you can access the characters of a string
+by indices - `my_string[0]` (you can use slices - `my_string[1:4]`).
+
+**String formatting**
+
+String formatting allows you to insert variable values at specific places in a string or create strings with a specific format, making code more readable and flexible.
+
+- Format() method
 
 ```python
 name = 'Alice'
 age = 30
-sentence = 'Меня зовут {}, и мне {} лет.'.format(name, age)
-print(sentence)  # Вывод: Меня зовут Alice, и мне 30 лет.
+sentence = 'My name is {}, and I am {} years old.'.format(name, age)
+print(sentence)  Output: My name is Alice, and I am 30 years old.
 ```
 
-- f-строки (f-strings) (доступны с версии Python 3.6 и выше)
+- f-strings (available from Python version 3.6 and higher)
 
 ```python
 name = 'Bob'
 age = 25
-sentence = f'Меня зовут {name}, и мне {age} лет.'
-print(sentence)  # Вывод: Меня зовут Bob, и мне 25 лет.
+sentence = f'My name is {name}, and I am {age} years old.'
+print(sentence)  # Output: My name is Bob, and I am 25 years old.
 ```
 
-**Основные методы для работы со строками**
+**Basic methods for working with strings**
 
-- len(): Возвращает длину строки, то есть количество символов в ней.
+- len(): Returns the length of the string, i.e. the number of characters in the string.
 
 ```python
-my_string = "Пример строки"
+my_string = "Example string"
 length = len(my_string)
-print(length)  # Вывод: 14
+print(length)  # Output: 14
 ```
 
-- lower() и upper(): Преобразуют все символы строки в нижний или верхний регистр.
+- lower() and upper(): Convert all characters in a string to lower or upper case.
 
 ```python
-my_string = "Пример Строки"
+my_string = "Example String"
 lower_case = my_string.lower()
 upper_case = my_string.upper()
-print(lower_case)  # Вывод: "пример строки"
-print(upper_case)  # Вывод: "ПРИМЕР СТРОКИ"
+print(lower_case)  # Output: "example string"
+print(upper_case)  # Output: "EXAMPLE STRING"
 ```
 
-- strip(): Удаляет пробельные символы в начале и конце строки.
+- strip(): emoves whitespace characters at the beginning and end of a string.
 
 ```python
-my_string = "   Пробелы в начале и конце   "
+my_string = "   Spaces at the beginning and end   "
 stripped_string = my_string.strip()
-print(stripped_string)  # Вывод: "Пробелы в начале и конце"
+print(stripped_string)  # Output: "Spaces at the beginning and end"
 ```
 
-- replace(): Заменяет подстроку другой подстрокой.
+- replace(): Replaces a substring with another substring.
 
 ```python
-my_string = "Замена символов"
+my_string = "Character replacement"
 new_string = my_string.replace("а", "о")
-print(new_string)  # Вывод: "Зомено символов"
+print(new_string)  # Output: "Chorocter replocement"
 ```
 
-- find() и index(): Ищут подстроку в строке и возвращают индекс первого вхождения. find() возвращает -1, если подстрока
-  не найдена, а index() вызывает исключение.
+- find() and index(): Search for a substring in the string and return the index of the first occurrence. find() returns -1 if no substring is found, and index() raises an exception.
 
 ```python
-my_string = "Поиск подстроки"
-index1 = my_string.find("подстрока")
-index2 = my_string.index("подстрока")
-print(index1)  # Вывод: 6
-print(index2)  # Вывод: 6
+my_string = "Substring search"
+index1 = my_string.find("substring")
+index2 = my_string.index("substring")
+print(index1)  # Output: 6
+print(index2)  # Output: 6
 ```
 
-- split(): Разбивает строку на подстроки по указанному разделителю и возвращает список.
+- split(): Splits a string into substrings by the specified delimiter and returns a list.
 
 ```python
-my_string = "Разделение строки по словам"
+my_string = "Splitting a string into words"
 words = my_string.split()
-print(words)  # Вывод: ['Разделение', 'строки', 'по', 'словам']
+print(words)  # Output: ['Splitting', 'a', 'string', 'into', 'words']
 ```
 
-- join(): Объединяет элементы списка строк в одну строку с использованием указанного разделителя.
+- join(): Combines elements of a string list into a single string using the specified delimiter.
 
 ```python
-words = ['Разделение', 'строки', 'по', 'словам']
+words = ['Splitting', 'a', 'string', 'into', 'words']
 my_string = ' '.join(words)
-print(my_string)  # Вывод: "Разделение строки по словам"
+print(my_string)  # Output: "Splitting a string into words"
 ```
 
-## Булевы значения
+## Boolean values
 
-Булевы значения (`bool`) представляют собой логические значения `True` (истина) и `False` (ложь).
-Они используются для выполнения логических операций и принятия решений в программе.
+Boolean values (`bool`) are logical values `True` and `False`. They are used to perform logical operations and make decisions in the program.
 
-### Основные булевы операции
+### Basic Boolean operations
 
-- Логическое И (and)
+- Conjunction (AND)
 
-Возвращает `True`, если оба операнда являются `True`. В противном случае возвращает `False`.
+Returns `True` if both operands are True`. Otherwise, returns `False`.
 
 ```python
 x = True
 y = False
 
 result = x and y
-print(result)  # Вывод: False
+print(result)  # Output: False
 ```
 
-- Логическое ИЛИ (or)
+- Disjunction (OR)
 
-Возвращает True, если хотя бы один из операндов является True. Если оба операнда False, возвращает False.
+Returns True if at least one of the operands is True. If both operands are False, returns False.
+
 
 ```python
 x = True
 y = False
 
 result = x or y
-print(result)  # Вывод: True
+print(result)  # Output: True
 ```
 
-- Логическое НЕ (not)
+- Negation (NOT)
 
-Инвертирует булево значение операнда. Если операнд True, то not сделает его False, и наоборот.
+Inverts the boolean value of the operand. If an operand is True, then not will make it False, and vice versa.
 
 ```python
 x = True
 
 result = not x
-print(result)  # Вывод: False
+print(result)  # Output: False
 ```
 
-Эти операции могут комбинироваться для создания более сложных логических выражений.
+These operations can be combined to create more complex logical expressions.
 
 ```python
 a = True
@@ -169,17 +166,16 @@ b = False
 c = True
 
 result = (a and b) or (not c)
-print(result)  # Вывод: False
+print(result)  # Output: False
 ```
 
-Булевы значения также часто используются в условных операторах (например, в конструкциях `if`, `else`, `elif`),
-чтобы принимать решения в зависимости от выполнения определенных условий.
+Boolean values are also often used in conditional statements (e.g., `if`, `else`, `elif`) to make decisions depending on the fulfillment of certain conditions.
 
 ```python
 x = 10
 
-if x > 5 and x < 15:   # в данном случае можно было написать 5 < x < 15 (chained expression)
-    print("x находится в диапазоне от 6 до 14.")
+if x > 5 and x < 15:   # in this case, you could have written 5 < x < 15 (chained expression)
+    print("x ranges from 6 to 14.")
 else:
-    print("x не находится в диапазоне от 6 до 14.")
+    print("x is not ranged from 6 to 14.")
 ```

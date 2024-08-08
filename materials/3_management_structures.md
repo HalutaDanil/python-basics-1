@@ -1,88 +1,85 @@
-# Управляющие структуры языка (следование, ветвление, повторение)
+# Control structures (sequential, branching, repetition)
 
-Управляющие структуры (следование, ветвление, повторение) являются основными строительными блоками для создания
-программ.
-Их использование позволяет разработчикам эффективно управлять потоком выполнения программы
-и создавать сложные и функциональные приложения.
+Control structures (sequential, branching, repetition) are the basic building blocks for creating programs.
+Using them allows developers to efficiently manage the flow of program execution and create complex and functional applications.
 
-## Следование (последовательность)
+## Sequence
 
-Это базовая управляющая структура, в которой инструкции выполняются последовательно, одна за другой, сверху вниз.
+This is a basic control structure in which instructions are executed sequentially, one after the other, from top to bottom.
 
 ```python
-# Пример последовательности
-print("Шаг 1")
-print("Шаг 2")
-print("Шаг 3")
+# An example of a sequence
+print("Step 1")
+print("Step 2")
+print("Step 3")
 ```
 
-## Ветвление (условные операторы)
+## Branching (conditional statements)
 
-Эта структура позволяет выполнить определенные инструкции только при определенных условиях.
-В Python используется оператор `if`, а также `elif` (else if) и `else`.
+This structure allows certain instructions to be executed only under certain conditions.
+Python uses the `if` statement , as well as `elif` (else if) and `else`.
 
 ```python
-# Пример ветвления
+# An example of branching
 x = 10
 
 if x > 0:
-    print("x положительное")
+    print("x positive")
 elif x == 0:
-    print("x равно 0")
+    print("x equal 0")
 else:
-    print("x отрицательное")
+    print("x negative")
 ```
 
-С Python 3.10 была введена новая структура для управления потоком выполнения программы - `match case`.
-Она предназначена для более удобной и читаемой обработки условий, когда нужно сравнивать значение переменной сразу с
-несколькими возможными значениями.
+With Python 3.10, a new structure was introduced to control the flow of program execution - `match case`.
+It is designed for more convenient and readable condition handling when you want to compare the value of a variable with several possible values at once.
 
 ```python
 def check_number(x):
     match x:
         case 0:
-            print("Это ноль")
+            print("This is zero")
         case 1 | 2:
-            print("Это один или два")
+            print("This is one or two")
         case 3 | 4 | 5:
-            print("Это три, четыре или пять")
+            print("This is three, four, five")
         case _:
-            print("Другое значение")
+            print("Other value")
 
 
 check_number(3)
 ```
 
-В приведенном примере `match case` проверяет значение переменной `x` на соответствие различным условиям.
-Знак `|` используется для объединения нескольких значений в одном `case`.
-Символ `_` является wildcard (заполнителем) и соответствует любому значению.
-Эта структура делает код более ясным и позволяет избежать громоздких цепочек if-elif-else.
-`match case` улучшает читаемость и обслуживаемость кода.
+In the above example, `match case` checks the value of the variable `x` against various conditions.
+The `|` is used to combine multiple values into a single `case`.
+The `_` is a wildcard (заполнителем) and corresponds to any value.
+This structure makes the code clearer and avoids bulky if-elif-else chains.
+`match case` improves code readability and maintainability.
 
-## Повторение (циклы)
+## Repetition (loops)
 
-Эти структуры позволяют выполнять один и тот же блок кода несколько раз.
-В Python существуют два основных типа циклов: `for` и `while`.
+These structures allow the same block of code to be executed multiple times.
+There are two basic types of loops in Python: `for` and `while`.
 
-### Цикл for
+### For
 
-Цикл for используется для итерации по последовательности (например, списку, кортежу, строке или диапазону чисел)
-и выполнения определенных инструкций для каждого элемента в последовательности.
+The for loop is used to iterate through a sequence (such as a list, tuple, string, or range of numbers)
+and execute specific instructions for each element in the sequence.
 
 ```python
-# Итерация по списку
-fruits = ["яблоко", "банан", "груша"]
+# Iteartion through a list
+fruits = ["apple", "banana", "pear"]
 for fruit in fruits:
     print(fruit)
 
-# Итерация по диапазону чисел
+# Iteration through a range of numbers
 for i in range(5):
     print(i)
 ```
 
-### Цикл while
+### While
 
-Цикл while выполняется, пока условие истинно. Он подходит, когда количество итераций заранее неизвестно.
+The while loop is executed as long as the condition is true. It is appropriate when the number of iterations is not known in advance.
 
 ```python
 count = 0

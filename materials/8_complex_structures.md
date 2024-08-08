@@ -1,17 +1,16 @@
-# Сложные структуры данных
+# Complex data structures
 
-Python позволяет создавать сложные структуры данных, вкладывая составные структуры данных друг в друга,
-получая, например, списки списков, списки кортежей, словари словарей и другие.
+Python allows you to create complex data structures by inserting compound data structures into each other, obtaining, for example, lists of lists, lists of tuples, dictionaries of dictionaries, etc.
 
 ```python
-# Матрица как список списков
+# Matrix as a list of lists
 matrix = [
     [1, 2, 3],
     [4, 5, 6],
     [7, 8, 9]
 ]
 
-# Формат json как словарь словарей
+# The json format as a dictionary of dictionaries
 users = {
     'user1': {
         'name': 'Alice',
@@ -26,14 +25,10 @@ users = {
 }
 ```
 
-Модуль `typing` в Python предоставляет инструменты для поддержки аннотации типов данных.
-Он позволяет объявлять сложные типы данных, такие как списки определенных объектов,
-словари с определенными ключами и значениями, кортежи разных типов и т.д.
-Это помогает улучшить читаемость кода и облегчает его поддержку.
+The `typing` module in Python provides tools to support annotation of data types.
+It allows you to declare complex data types such as lists of certain objects, dictionaries with certain keys and values, tuples of different types, etc.
+This helps improve the readability of the code and makes it easier to maintain.
 
-Python также предлагает другие сложные структуры данных, например, коллекции из модуля `collections`
-(namedtuple, defaultdict, Counter и другие). Они предоставляют различные способы хранения и организации данных
-в зависимости от конкретных потребностей. Важно выбирать структуры данных в зависимости от задачи,
-учитывая требования по доступу к данным, скорость выполнения операций и другие характеристики.
-Python предоставляет широкий спектр инструментов для работы с данными,
-что делает его удобным и гибким языком программирования.
+Python also offers other complex data structures, such as, `collections` (namedtuple, defaultdict, Counter and others).
+They provide different ways of storing and arranging data depending on your specific needs. It is important to choose data structures depending on the task, considering data access requirements, speed of operations and other characteristics.
+Python provides a wide range of tools for working with data, making it a convenient and flexible programming language.

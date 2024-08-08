@@ -1,39 +1,34 @@
-# Функции
+# Functions
 
-Функция - это блок кода, который имеет имя, принимает аргументы (входные данные), выполняет определенную задачу и, возможно, возвращает результат.
-Функции позволяют организовывать код, делать его более читаемым, и избегать дублирования кода.
+A function is a block of code that has a name, accepts arguments (input data), performs a specific task, and possibly returns a result.
+Functions allow you to organize your code, make it more readable, and avoid duplication.
 
 ```python
-def приветствие(имя):
-    """Функция, которая приветствует по имени."""
-    print(f"Привет, {имя}!")
+def greeting(name):
+    """A function that greets by name."""
+    print(f"Hello, {name}!")
 
 
-# Использование функции
-приветствие("Анна")
+# Using the function
+greeting("Anna")
 ```
 
-Рекурсия - это концепция, когда функция вызывает саму себя. Рекурсия обычно используется для решения задач,
-которые могут быть разбиты на более мелкие подзадачи. Например, рекурсивно можно посчитать факториал некоторого числа n.
-Факториал числа n - это произведение всех целых чисел от 1 до n.
+Recursion is a concept where a function calls itself. Recursion is usually used to solve problems which can be broken down into smaller subtasks. For example, we can recursively calculate the factorial of some number n. The factorial of a number n is the product of all integers from 1 to n.
 
 ```python
-def факториал(n):
-    """Рекурсивная функция для вычисления факториала числа."""
+def factorial(n):
+    """Recursive function for calculating the factorial of a number."""
     if n == 0 or n == 1:
         return 1
     else:
-        return n * факториал(n - 1)
+        return n * factorial(n - 1)
 
 
-# Использование функции
-результат = факториал(5)
-print(результат)
+# Using the function
+result = factorial(5)
+print(result)
 ```
 
-При использовании рекурсии важно предусмотреть базовый случай (в данном примере, когда n равно 0 или 1),
-чтобы избежать бесконечного вызова функции.
+When we use recursion, it is important to provide a base case (in this example, when n is 0 or 1), to avoid infinite function calls.
 
-Также важно учитывать, что глубина рекурсии в Python ограничена. Это ограничение можно менять,
-используя функцию `setrecursionlimit()` из стандартной библиотеки `sys`, однако так делают только в крайних случаях,
-поскольку это совершенно небезопасно, и по возможности используют итеративные алгоритмы.
+It's also important to keep in mind that the depth of recursion in Python is limited. This limit can be changed using the `setrecursionlimit()` function from the `sys` standard library, but this is only done in extreme cases, as it is completely unsafe, and use iterative algorithms whenever possible.

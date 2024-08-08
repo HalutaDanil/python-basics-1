@@ -1,323 +1,321 @@
-# Составные типы данных
+# Composite data types
 
-В языке Python составные типы данных предоставляют возможность хранить большие объемы информации и управлять ими.
-Можно группировать связанные данные в одну переменную и делать код более организованным и удобным для работы.
+In Python, composite data types provide the ability to store and manage large amounts of information. You can group related data into one variable and make the code more organized and easy to work with.
 
-## Список
+## A list
 
-Одним из самых популярных составных типов данных в Python является список (`list`).
+One of the most popular composite data types in Python is the `list`.
 
-Список - это упорядоченная коллекция элементов, которая может содержать объекты различных типов данных.
+The list is an ordered collection of items that can contain objects of different data types.
 
-Вы можете добавлять, удалять и изменять элементы списка, а также выполнять различные операции, такие как сортировка и поиск.
+You can add, delete, and modify list items, as well as perform various operations such as sorting and searching.
 
-### Создание списка
+### List creation
 
-Списки могут быть созданы с помощью квадратных скобок или функции `list()`.
+You can create lists using square brackets or the function `list()`.
 
 ```python
 my_list = [1, 2, 3]
-another_list = list((4, 5, 6))  # в функцию list() можно передавать любой итерируемый объект: list, tuple, map, str и пр.
+another_list = list((4, 5, 6))  # any iterated object can be passed to the list() function: list, tuple, map, str, etc.
 ```
 
-### Индексация и срезы
+### Indexing and slicing
 
-Элементы списка можно получать по индексу или выполнять срезы. Индексация начинается с 0.
+List items can be retrieved by index or by performing slices. Indexing starts at 0.
 
 ```python
 my_list = [1, 2, 3, 4, 5]
-print(my_list[0])  # Вывод: 1
-print(my_list[1:3])  # Вывод: (2, 3)
+print(my_list[0])  # Output: 1
+print(my_list[1:3])  # Output: (2, 3)
 ```
 
-### Длина списка
+### The length of a list
 
-Вы можете узнать длину списка с помощью функции `len()`.
+You can find out the length of a list using the `len()` function.
 
 ```python
 my_tuple = (1, 2, 3)
-print(len(my_tuple))  # Вывод: 3
+print(len(my_tuple))  # Output: 3
 ```
 
-### Конкатенация и повторение
+### Concatenation and repetition
 
-Списки можно объединять с помощью оператора `+` и повторять с помощью оператора `*`.
+Lists can be joined using the `+` operator and repeated using the `*` operator.
 
 ```python
 list1 = [1, 2, 3]
 list2 = [4, 5, 6]
-concatenated_list = list1 + list2  # Вывод: [1, 2, 3, 4, 5, 6]
-repeated_list = list1 * 3  # Вывод: [1, 2, 3, 1, 2, 3, 1, 2, 3]
+concatenated_list = list1 + list2  # Output: [1, 2, 3, 4, 5, 6]
+repeated_list = list1 * 3  # Output: [1, 2, 3, 1, 2, 3, 1, 2, 3]
 ```
 
-### Основные методы для работы со списками
+### Basic methods for working with lists
 
 #### append()
 
-Добавляет элемент в конец списка.
+Adds an item to the end of a list.
 
 ```python
 my_list = [1, 2, 3]
 my_list.append(4)
-# Результат: [1, 2, 3, 4]
+# Result: [1, 2, 3, 4]
 ```
 
 #### extend()
 
-Расширяет список, добавляя элементы другого списка в конец.
+Expands a list by adding items of another list to the end.
 
 ```python
 my_list = [1, 2, 3]
 another_list = [4, 5, 6]
 my_list.extend(another_list)
-# Результат: [1, 2, 3, 4, 5, 6]
+# Result: [1, 2, 3, 4, 5, 6]
 ```
 
 #### insert()
 
-Вставляет элемент в указанную позицию списка.
+Insert an item at the specified position in a list.
 
 ```python
 my_list = [1, 2, 3]
-my_list.insert(1, 5)  # Вставляем 5 на позицию 1
-# Результат: [1, 5, 2, 3]
+my_list.insert(1, 5)  # Insert 5 to position 1
+# Result: [1, 5, 2, 3]
 ```
 
 #### remove()
 
-Удаляет первое вхождение элемента из списка.
+Removes the first occurrence of an item from the list.
 
 ```python
 my_list = [1, 2, 3, 2]
 my_list.remove(2)
-# Результат: [1, 3, 2]
+# Result: [1, 3, 2]
 ```
 
 #### pop()
 
-Удаляет элемент по индексу и возвращает его значение. Если индекс не указан, удаляется последний элемент.
+Deletes an item by index and returns its value. If no index is specified, the last item is deleted.
 
 ```python
 my_list = [1, 2, 3]
-value = my_list.pop(1)  # Удаляем элемент с индексом 1 (2) и сохраняем его значение в переменной value
-# Результат my_list: [1, 3]
-# Результат value: 2
+value = my_list.pop(1)  # Delete the item with 1 (2) index and store its value in the value variable.
+# Result my_list: [1, 3]
+# Result value: 2
 ```
 
 #### index()
 
-Возвращает индекс первого вхождения указанного элемента в списке.
+Returns the index of the first occurrence of the specified item in the list.
 
 ```python
 my_list = [1, 2, 3, 2]
 index = my_list.index(2)
-# Результат: index = 1
+# Result: index = 1
 ```
 
 #### count()
 
-Возвращает количество вхождений указанного элемента в списке.
+Returns the number of occurrences of the specified item in the list.
 
 ```python
 my_list = [1, 2, 3, 2]
 count = my_list.count(2)
-# Результат: count = 2
+# Result: count = 2
 ```
 
 #### sort()
 
-Сортирует список по возрастанию (или по определенным критериям, если указаны).
+Sorts the list in ascending order (or by specific criteria, if specified).
 
 ```python
 my_list = [3, 1, 4, 2]
 my_list.sort()
-# Результат: [1, 2, 3, 4]
+# Result: [1, 2, 3, 4]
 ```
 
-## Кортеж
+## Tuples
 
-Еще одним составным типом данных является кортеж (`tuple`).
+Another composite data type(`tuple`).
 
-Кортеж похож на список, но он неизменяемый, то есть его элементы нельзя изменять после создания.
-Кортежи часто используются для представления неизменяемых наборов данных, таких как координаты точки или дата и время.
+A tuple is similar to a list, but it is unchangeable, meaning that its items cannot be changed after creation. 
+Tuples are often used to represent unchangeable data sets, such as point coordinates or date and time.
 
-### Создание кортежа
+### Tuples creation
 
-Кортежи могут быть созданы с помощью круглых скобок или функции `tuple()`.
+You can create tuples using round brackets or the function `tuple()`.
 
 ```python
 my_tuple = (1, 2, 3)
 another_tuple = tuple([4, 5, 6])
 ```
 
-### Индексация и срезы
+### Indexing and slicing
 
-Как и в списках, элементы кортежа можно получать по индексу или выполнять срезы. Индексация начинается с 0.
+As in lists, tuple items can be retrieved by index or by performing slicing. Indexing starts at 0.
 
 ```python
 my_tuple = (1, 2, 3, 4, 5)
-print(my_tuple[0])  # Вывод: 1
-print(my_tuple[1:3])  # Вывод: (2, 3)
+print(my_tuple[0])  # Output: 1
+print(my_tuple[1:3])  # Output: (2, 3)
 ```
 
-### Длина кортежа
+### Tuple length
 
-Вы можете узнать длину кортежа с помощью функции `len()`.
+You can find out the length of a tuple using the `len()` function.
 
 ```python
 my_tuple = (1, 2, 3)
-print(len(my_tuple))  # Вывод: 3
+print(len(my_tuple))  # Output: 3
 ```
 
-### Конкатенация и повторение
+### Concatenation and repetition
 
-Кортежи можно объединять с помощью оператора `+` и повторять с помощью оператора `*`.
+Tuples can be joined using the `+` operator and repeated using the `*` operator.
 
 ```python
 tuple1 = (1, 2, 3)
 tuple2 = (4, 5, 6)
-concatenated_tuple = tuple1 + tuple2  # Вывод: (1, 2, 3, 4, 5, 6)
-repeated_tuple = tuple1 * 3  # Вывод: (1, 2, 3, 1, 2, 3, 1, 2, 3)
+concatenated_tuple = tuple1 + tuple2  # Output: (1, 2, 3, 4, 5, 6)
+repeated_tuple = tuple1 * 3  # Output: (1, 2, 3, 1, 2, 3, 1, 2, 3)
 ```
 
-У кортежей есть все методы списков, которые их не изменяют. Например, `count()`, `find()`, `index()` и прочие.
+Tuples have all the methods of lists that don't modify them. For example, `count()`, `find()`, `index()` and others.
 
-## Словарь
+## Dictionaries
 
-Словарь (`dictionary`) - еще один мощный составной тип данных в Python.
+A `dictionary` is another powerful composite data type in Python.
 
-Он представляет собой коллекцию пар "ключ-значение".
-Словари позволяют быстро находить значения по ключу и манипулировать данными в более структурированном формате.
+It is a collection of key-value pairs. Dictionaries allow you to quickly find values by key and manipulate data in a more structured format.
 
 
-### Создание словаря
+### Dictionary creation
 
-Словари могут быть созданы с помощью фигурных скобок или функции `dict()`.
-Пустой словарь может быть создан только вторым способом, так как пустые фигурные скобки создают пустое множество.
+You can create dictionaries using curly brackets or the function `dict()`. An empty dictionary can only be created using the second method, since empty curly brackets create an empty set.
 
 ```python
 my_dict = {"apple": 2, "banana": 4, "orange": 6}
 ```
 
-### Добавление элемента
+### Adding an item
 
 ```python
 my_dict["grape"] = 3
 ```
 
-### Получение значения по ключу
+### Retrieving value by key
 
 ```python
-print(my_dict["apple"])  # Вывод: 2
+print(my_dict["apple"])  # Output: 2
 ```
 
-### Проверка наличия ключа в словаре
+### Checking for a key in the dictionary
 
 ```python
-print("pear" in my_dict)  # Вывод: False
+print("pear" in my_dict)  # Output: False
 ```
 
-### Удаление элемента по ключу
+### Deleting an item by key
 
 ```python
 del my_dict["banana"]
 ```
 
-### Получение всех ключей или значений словаря
+### Retrieving all keys or dictionary values
 
 ```python
 keys = my_dict.keys()
 values = my_dict.values()
 ```
 
-### Получение всех пар "ключ-значение" словаря
+### Retrieving all key-value pairs of the dictionary
 
 ```python
 items = my_dict.items()
 ```
 
-### Обновление словаря другим словарем
+### Updating a dictionary with another dictionary
 
 ```python
 new_dict = {"kiwi": 5, "grapefruit": 8}
 my_dict.update(new_dict)
 ```
 
-### Перебор элементов словаря
+### Enumeration of dictionary elements
 
 ```python
 for key, value in my_dict.items():
     print(key, value)
 ```
 
-### Очистка словаря
+### Clearing the dictionary
 
 ```python
 my_dict.clear()
 ```
 
-## Множества
+## Sets
 
-В Python есть множества (set), которые представляют собой неупорядоченные коллекции уникальных элементов.
+There are sets in Python, which are unordered collections of unique items.
 
-Множества полезны для удаления дубликатов и выполнения операций над множествами, таких как объединение, пересечение и разность.
+Sets are useful for removing duplicates and performing operations on sets, such as union, intersection, and difference.
 
-### Создание множества
+### Sets creation
 
-Множества могут быть созданы с помощью фигурных скобок или функции `set()`.
-
-```python
-my_set = {1, 2, 3, 4, 5}  # создание множества с помощью фигурных скобок
-```
-
-### Добавление элемента в множество
+You can create sets using curly brackets or the function `set()`.
 
 ```python
-my_set.add(6)  # добавление элемента 6 в множество
+my_set = {1, 2, 3, 4, 5}  # creating a set using curly brackets 
 ```
 
-### Удаление элемента из множества
+### Adding an item in a set
 
 ```python
-my_set.remove(3)  # удаление элемента 3 из множества
+my_set.add(6)  # adding item 6 to the set
 ```
 
-### Проверка наличия элемента в множестве
+### Removing an item from a set
+
+```python
+my_set.remove(3)  # removing item 3 from the set
+```
+
+### Checking the availability of an item in a set
 
 ```python
 if 4 in my_set:
-    print("Элемент 4 находится в множестве")
+    print("Item 4 is in the set")
 ```
 
-### Объединение двух множеств
+### Union of two sets
 
 ```python
 my_set2 = {5, 6, 7, 8, 9}
-union_set = my_set.union(my_set2)  # объединение множеств
+union_set = my_set.union(my_set2)  # set union
+
 ```
 
-### Пересечение двух множеств
+### Intersection of two sets
 
 ```python
-intersection_set = my_set.intersection(my_set2)  # пересечение множеств
+intersection_set = my_set.intersection(my_set2)  # set intersection
 ```
 
-### Разность двух множеств
+### Difference of two sets
 
 ```python
-difference_set = my_set.difference(my_set2)  # разность множеств
+difference_set = my_set.difference(my_set2)  # set difference
 ```
 
-### Проверка подмножества
+### Subset check
 
 ```python
 if my_set.issubset(my_set2):
-    print("Множество my_set является подмножеством my_set2")
+    print("The set my_set is a subset of my_set2")
 ```
 
-### Проверка непересекающихся множеств
+### Disjoint sets check
 
 ```python
 if my_set.isdisjoint(my_set2):
-    print("Множества my_set и my_set2 не имеют общих элементов")
+    print("The sets my_set and my_set2 have no items in common")
 ```
