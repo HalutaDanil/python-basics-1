@@ -124,7 +124,7 @@ Determine whether the number is a palindrome or not. Use standard input stream a
         <th>Output</th>
     </tr>
     <tr>
-        <td>114341</td>
+        <td>1143411</td>
         <td>True</td>
     </tr>
 </table>
