@@ -153,8 +153,8 @@ Process a square matrix of zeros and ones, count the number of "squares" and "ci
 
 Output N first rows of Pascal's triangle by the given number N of rows. Use standard input stream and standard output stream for data input and output, respectively. Check the correctness of the input data.
 
-- Input: Real numbers, coordinates of two vectors on two lines respectively.
-- Output: Real number, scalar product of given vectors.
+- Input: Integer, number of rows.
+- Output: Integer numbers, Pascal's triangle.
 
 <table>
     <tr>
@@ -165,6 +165,11 @@ Output N first rows of Pascal's triangle by the given number N of rows. Use stan
         <td>5</td>
         <td>1<br>1 1<br>1 2 1<br>1 3 3 1<br>1 4 6 4 1</td>
     </tr>
+    <tr>
+        <td>f</td>
+        <td>Natural number was expected</td>
+    </tr>
+
 </table>
 
 ## Task 5. String to number conversion
