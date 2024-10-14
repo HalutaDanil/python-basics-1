@@ -17,7 +17,7 @@ Summary: In this project, you will learn about the main functions of the **Pytho
      - [Task 6. Movies](#task-6-movies)  
      - [Task 7. A robot](#task-7-a-robot)
      - [Task 8. Different numbers](#task-8-different-numbers) 
-     - [Task 9. The derivative at a point](#task-9-the-derivative-at-a point)  
+     - [Task 9. The derivative at a point](#task-9-the-derivative-at-a-point)  
      - [Task 10. Machines](#task-10-machines)   
 
 
