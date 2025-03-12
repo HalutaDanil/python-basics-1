@@ -31,7 +31,7 @@ Summary: In this project, you will learn about the main functions of the **Pytho
 4. Read the examples carefully. There may be something in them that is not explicitly stated in the task itself.
 5. You may find inconsistencies, when something new in the terms of the task or examples conflicts with something you already know. If you come across such an inconsistency, try to figure it out. If you can’t, write the question in open questions and find out in the process of work. Do not leave open questions unresolved.  
 6. If a task seems confusing or impossible to complete — it only seems that way. Try to decompose it. Most likely, some parts will become clear.  
-7. There will be various tasks. Those marked with an c (\\\*) are for the more meticulous students. These tasks are more difficult and are not mandatory. But if you do them, you will gain additional experience and knowledge.
+7. You'll encounter various tasks along the way. The bonus tasks are for the most meticulous and curious students. These tasks are more difficult and optional, but they'll help you gain additional experience and knowledge.
 8. Don't try to fool the system and those around you. You will be fooling yourself first.
 9. You got a question? Ask your neighbor on the right.  If that doesn't help, ask your neighbor on the left.
 10. If you use help, you should always understand why and how.  Otherwise, the help will not make sense.
