@@ -97,8 +97,8 @@ print(new_string)  # Вывод: "Зомено символов"
 
 ```python
 my_string = "Поиск подстроки"
-index1 = my_string.find("подстрока")
-index2 = my_string.index("подстрока")
+index1 = my_string.find("подстроки")
+index2 = my_string.index("подстроки")
 print(index1)  # Вывод: 6
 print(index2)  # Вывод: 6
 ```

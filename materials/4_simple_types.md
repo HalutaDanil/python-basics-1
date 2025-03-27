@@ -93,11 +93,11 @@ print(new_string)  # Output: "Chorocter replocement"
 - find() and index(): Search for a substring in the string and return the index of the first occurrence. find() returns -1 if no substring is found, and index() raises an exception.
 
 ```python
-my_string = "Substring search"
+my_string = "Search substring"
 index1 = my_string.find("substring")
 index2 = my_string.index("substring")
-print(index1)  # Output: 6
-print(index2)  # Output: 6
+print(index1)  # Output: 7
+print(index2)  # Output: 7
 ```
 
 - split(): Splits a string into substrings by the specified delimiter and returns a list.
