@@ -304,7 +304,7 @@ Count the number of different numbers entered. Use standard input stream and sta
 
 Calculate the derivative of a given polynomial at a given point. Print the result with three digits after the dot. Use standard input stream and standard output stream for data input and output, respectively. Do not check the correctness of the input data.
 
-- Input: The natural and real numbers, the highest degree of the polynomial N and the point at which you want to find the derivative, respectively. N lines, the i-th line contains a real number, the coefficient at x in degree i (indexing from one).
+- Input: The first line contains a natural and a real numbers, the highest degree of the polynomial N and the point at which you want to find the derivative, respectively. The subsequent lines contain real numbers, coefficients at the degrees of x, starting with the highest degree.
 - Output: The real number, the derivative of a polynomial at a point.
 
 Polynomial: `5 * x**2 + 1.2 * x - 3` \
