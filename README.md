@@ -179,20 +179,15 @@ Convert a string to a real number as if it were processed by the `float()` funct
 - Input: A string
 - Output: A real number if the input is correct. An error message if the input is incorrect.
 
-<table>
-    <tr>
-        <th>Input</th>
-        <th>Output</th>
-    </tr>
-    <tr>
-        <td>-14.97</td>
-        <td>-29.940</td>
-    </tr>
-</table>
+
+| Input          | Output          |
+|----------------|-----------------|
+| -14.97         | -29.940         |
+| +19.2          | 39.400          |
 
 ### Task 6. Movies
 
-Join two lists of movies sorted by the `year` field so that the resulting list remains sorted. The input data is in json format. Output the joined list also in json format. Use the input.txt text file to enter data. Use the standard output stream to output data. Check the correctness of the input data.
+Join two lists of movies sorted by the `year` field so that the resulting list remains sorted. The input data is in json format. Output the joined list also in json format. Use the input.txt text file to enter data. Use the standard output stream to output data. Check the correctness of the input data. If the input file is empty, display the message “Empty file”.
 
 - Input: Two sorted lists of movies in json format.
 - Output: The joined sorted list in json format if the input is correct. An error message if the input is incorrect.
