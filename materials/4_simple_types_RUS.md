@@ -63,7 +63,7 @@ print(sentence)  # Вывод: Меня зовут Bob, и мне 25 лет.
 ```python
 my_string = "Пример строки"
 length = len(my_string)
-print(length)  # Вывод: 14
+print(length)  # Вывод: 13
 ```
 
 - lower() и upper(): Преобразуют все символы строки в нижний или верхний регистр.

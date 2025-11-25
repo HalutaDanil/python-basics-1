@@ -24,9 +24,9 @@ my_string = 'Hello, world!'
 another_string = "It's a different string."
 
 # Triple quotes (for multiline strings)
-multiline_string = ''It's
+multiline_string = """It's
 a multiline
-string.'''
+string."""
 ```
 
 Strings can be concatenated - `my_string + another_string`, and you can access the characters of a string
