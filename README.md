@@ -183,7 +183,7 @@ Convert a string to a real number as if it were processed by the `float()` funct
 | Input          | Output          |
 |----------------|-----------------|
 | -14.97         | -29.940         |
-| +19.2          | 39.400          |
+| +19.2          | 38.400          |
 
 ### Task 6. Movies
 
