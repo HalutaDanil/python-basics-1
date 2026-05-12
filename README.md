@@ -32,15 +32,6 @@ A collection of 10 algorithmic tasks covering fundamental Python concepts. From 
 | exercise9 | Polynomial derivative |
 | exercise10 | Machine optimization |
 
-### 🚀 Quick Start
-
-```bash
-cd src/exercise1
-python main.py
-# Input: 1.0 2.0 3.0
-#        4.0 5.0 6.0
-# Output: 32.0
-```
 
 ---
 
@@ -72,15 +63,6 @@ python main.py
 | exercise9 | Производная многочлена |
 | exercise10 | Оптимизация выбора машин |
 
-### 🚀 Быстрый старт
-
-```bash
-cd src/exercise1
-python main.py
-# Ввод: 1.0 2.0 3.0
-#       4.0 5.0 6.0
-# Вывод: 32.0
-```
 
 ---
 
