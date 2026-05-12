@@ -19,11 +19,28 @@ A collection of 10 algorithmic tasks covering fundamental Python concepts. From 
 
 ### ✨ Features
 
-| Task | Topic |\n|------|-------|\n| exercise1 | Scalar product of vectors |\n| exercise2 | Palindrome check (no strings!) |\n| exercise3 | Binary matrix figures |\n| exercise4 | Pascal's triangle |\n| exercise5 | Custom float() parser |\n| exercise6 | JSON merge & sort |\n| exercise7 | Robot coin collector (DP) |\n| exercise8 | Unique numbers count |\n| exercise9 | Polynomial derivative |\n| exercise10 | Machine optimization |
+| Task | Topic |
+|------|-------|
+| exercise1 | Scalar product of vectors |
+| exercise2 | Palindrome check (no strings!) |
+| exercise3 | Binary matrix figures |
+| exercise4 | Pascal's triangle |
+| exercise5 | Custom float() parser |
+| exercise6 | JSON merge & sort |
+| exercise7 | Robot coin collector (DP) |
+| exercise8 | Unique numbers count |
+| exercise9 | Polynomial derivative |
+| exercise10 | Machine optimization |
 
 ### 🚀 Quick Start
 
-```bash\ncd src/exercise1\npython main.py\n# Input: 1.0 2.0 3.0\n#        4.0 5.0 6.0\n# Output: 32.0\n```
+```bash
+cd src/exercise1
+python main.py
+# Input: 1.0 2.0 3.0
+#        4.0 5.0 6.0
+# Output: 32.0
+```
 
 ---
 
@@ -42,11 +59,28 @@ A collection of 10 algorithmic tasks covering fundamental Python concepts. From 
 
 ### ✨ Возможности
 
-| Задача | Тема |\n|--------|------|\n| exercise1 | Скалярное произведение векторов |\n| exercise2 | Проверка палиндрома (без строк!) |\n| exercise3 | Фигуры в бинарной матрице |\n| exercise4 | Треугольник Паскаля |\n| exercise5 | Свой парсер float() |\n| exercise6 | Слияние и сортировка JSON |\n| exercise7 | Робот-сборщик монет (ДП) |\n| exercise8 | Подсчёт уникальных чисел |\n| exercise9 | Производная многочлена |\n| exercise10 | Оптимизация выбора машин |
+| Задача | Тема |
+|--------|------|
+| exercise1 | Скалярное произведение векторов |
+| exercise2 | Проверка палиндрома (без строк!) |
+| exercise3 | Фигуры в бинарной матрице |
+| exercise4 | Треугольник Паскаля |
+| exercise5 | Свой парсер float() |
+| exercise6 | Слияние и сортировка JSON |
+| exercise7 | Робот-сборщик монет (ДП) |
+| exercise8 | Подсчёт уникальных чисел |
+| exercise9 | Производная многочлена |
+| exercise10 | Оптимизация выбора машин |
 
 ### 🚀 Быстрый старт
 
-```bash\ncd src/exercise1\npython main.py\n# Ввод: 1.0 2.0 3.0\n#       4.0 5.0 6.0\n# Вывод: 32.0\n```
+```bash
+cd src/exercise1
+python main.py
+# Ввод: 1.0 2.0 3.0
+#       4.0 5.0 6.0
+# Вывод: 32.0
+```
 
 ---
 
